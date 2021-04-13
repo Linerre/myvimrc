@@ -10,6 +10,7 @@ set nobackup
 set noundofile
 set writebackup
 set showmatch
+set matchtime=15
 set number
 set ignorecase smartcase
 set noexpandtab
