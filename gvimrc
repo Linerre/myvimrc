@@ -10,7 +10,6 @@ set nobackup
 set noundofile
 set writebackup
 set showmatch
-set matchtime=15
 set number
 set ignorecase smartcase
 set noexpandtab
@@ -24,3 +23,5 @@ set wildmode=longest,list
 set nohlsearch
 filetype plugin indent on
 syntax enable
+
+"set path+=C:\\Program\\\ Files\Python39\\Lib
