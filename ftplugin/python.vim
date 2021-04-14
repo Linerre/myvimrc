@@ -17,7 +17,10 @@ if &path == '.,,'
 endif
 
 " get all the lines in the current py script buffer
-let b:current_script_lines = getbufline(bufname(), 1, '$')
+let g:current_script_lines = getbufline(bufname(0), 1, "$") 
 
 " keep only the import statements lines
-let b:module_lines = filter(copy(current_script_lines), 'v:val =~ "import \\S\\+"') 
+" map + funcref requires funcref with 2 argvs
+" see: https://vimhelp.org/eval.txt.html#map%28%29
+let g:module_lines = map(uniq(sort(filter(copy(current_script_lines), 'v:val =~ "^\\s*import \\S\\+"'), 'i')), {_, val -> trim(val)})
+
