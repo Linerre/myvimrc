@@ -15,3 +15,9 @@
 if &path == '.,,'
     setlocal path+=C:\\Program\\\ Files\Python39\Lib
 endif
+
+" get all the lines in the current py script buffer
+let b:current_script_lines = getbufline(bufname(), 1, '$')
+
+" keep only the import statements lines
+let b:module_lines = filter(copy(current_script_lines), 'v:val =~ "import \\S\\+"') 
