@@ -22,5 +22,9 @@ let g:current_script_lines = getbufline(bufname(0), 1, "$")
 " keep only the import statements lines
 " map + funcref requires funcref with 2 argvs
 " see: https://vimhelp.org/eval.txt.html#map%28%29
-let g:module_lines = map(uniq(sort(filter(copy(current_script_lines), 'v:val =~ "^\\s*import \\S\\+"'), 'i')), {_, val -> trim(val)})
+let g:module_lines = map(
+    \ uniq(sort(
+    \ filter(
+    \ copy(current_script_lines), 'v:val =~ "^\\s*import \\S\\+"'),'i')),
+    \ {_, val -> substitute(val, "\\s*import ", "", "")})
 
