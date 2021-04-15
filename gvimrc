@@ -32,3 +32,6 @@ if !exists("g:os")
         let g:os = substitute(system('uname'), '\n', '', '')
     endif
 endif
+
+" Mappings
+noremap ; :
