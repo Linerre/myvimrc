@@ -1,6 +1,13 @@
-" MY VIMRC -- A Minimal Working Vimrc
+" MY VIMRC -- A suckless yet working vimrc
 " Author: Errelin
 " Last Modified: 2021-4-11
+
+
+" Necessary plugins
+call plug#begin('~/vimfiles/plugged')
+Plug 'natebosch/vim-lsc'
+Plug 'ajh17/VimCompletesMe'
+call plug#end()
 
 " Basic options
 set number
