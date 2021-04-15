@@ -40,5 +40,8 @@ if !exists("g:os")
     endif
 endif
 
+" Auto-completion
+set completeopt=menu,menuone,noinsert,noselect
+
 " Mappings
 noremap ; :
