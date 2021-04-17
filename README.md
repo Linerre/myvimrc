@@ -10,7 +10,13 @@ The following files will be sourced when `vimrc` gets sourced:
 2. ....
 
 ## Modules structure explained
+To better understand what files will be sourced in what an order, the following sections/parts serve as a good starting point:
+1. [Initialization](https://vimhelp.org/starting.txt.html#initialization);
+2. [runtime](https://vimhelp.org/repeat.txt.html#%3Aruntime)
+3. [$VIMRUNTIME](https://vimhelp.org/starting.txt.html#%24VIMRUNTIME)
+
 According to Vim manual:
+
 The following dirs (grouped here) will be sourced when vim starts:
 Group 1: vimfiles -- my preference
 
@@ -43,11 +49,7 @@ or if another order is prefered:
 
     set runtimpath=$VIMRUNTIME,~/vimfiles,~/mytest
 
-Vim manual explains<sup>[l](#myft1)</sup>:
+Vim manual explains<sup>[1](#myft1)</sup>:
 >You probably should always include $VIMRUNTIME somewhere, to use thedistributed runtime files.  You can put a directory before $VIMRUNTIME to find files which replace a distributed runtime files.  You can put a directory after $VIMRUNTIME to find files which add to distributed runtime files.
 
-
-[Initialization](https://vimhelp.org/starting.txt.html#initialization);
-[runtime](https://vimhelp.org/repeat.txt.html#%3Aruntime)
-[$VIMRUNTIME](https://vimhelp.org/starting.txt.html#%24VIMRUNTIME)
-<a name="myft1">[2]</a>: [runtimepath](https://vimhelp.org/options.txt.html#%27runtimepath%27);
+<a name="myft1">[1]</a>: [runtimepath](https://vimhelp.org/options.txt.html#%27runtimepath%27);
