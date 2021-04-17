@@ -12,7 +12,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 call plug#end()
 
 " Basic options
-set number
+set number                      " absolute line number
 set backupdir=~/.tmp            " backup file to .tmp
 set undodir=~/.tmp              " undo file to .tmp
 set dir=~/.tmp                  " swap file to .tmp 
