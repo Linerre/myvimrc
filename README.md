@@ -15,15 +15,15 @@ The following dirs (grouped here) will be sourced when vim starts:
 Group 1: vimfiles -- my preference
 
     ~/vimfiles == C:\Users\username/vimfiles,
-                  "┕C:\Users\username\vimfiles\plugged\vim-lsc,
-                  "┕C:\Users\username\vimfiles\plugged\VimCompletesMe,
-                  "┕C:\Users\username\vimfiles\plugged\gruvbox,
+                  ┕C:\Users\username\vimfiles\plugged\vim-lsc,
+                  ┕C:\Users\username\vimfiles\plugged\VimCompletesMe,
+                  ┕C:\Users\username\vimfiles\plugged\gruvbox,
                
-Group 2: $VIMRUMTIM == where vim has been installed
+Group 2: `$VIMRUMTIM` == where vim has been installed
 
     C:\Users\username\scoop\apps\vim-nightly\current\vimfiles\
 
-Group 2': after dirs == where `after` dirs are
+Group 2': after dirs == where `after` dirs are (part of group2)
 
     C:\Users\username\scoop\apps\vim-nightly\current/vimfiles/after,
     C:\Users\username\vimfiles\plugged\vim-lsc\after,
@@ -31,7 +31,7 @@ Group 2': after dirs == where `after` dirs are
 
 Group 3: whatever files on my machine
 
-runtimepath (or 'rtp' for short) can be set in this way:
+`runtimepath` (or `rtp` for short) can be set in this way:
 
     set runtimepath=group1,group2,group3,...
 
@@ -48,6 +48,6 @@ Vim manual explains[^2]:
 
 
 [Initialization](https://vimhelp.org/starting.txt.html#initialization);
-[^2]: [runtimepath](https://vimhelp.org/options.txt.html#%27runtimepath%27);
 [runtime](https://vimhelp.org/repeat.txt.html#%3Aruntime)
 [$VIMRUNTIME](https://vimhelp.org/starting.txt.html#%24VIMRUNTIME)
+<a name="myft1">[2]</a>: [runtimepath](https://vimhelp.org/options.txt.html#%27runtimepath%27);
