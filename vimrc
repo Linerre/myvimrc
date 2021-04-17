@@ -12,7 +12,6 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 call plug#end()
 
 " Basic options
-set nocompatible
 set number
 set backupdir=~/.tmp            " backup file to .tmp
 set undodir=~/.tmp              " undo file to .tmp
