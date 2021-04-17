@@ -10,8 +10,8 @@ The following files will be sourced when `vimrc` gets sourced:
 2. ....
 
 ## Modules structure explained
-To better understand what files will be sourced in what an order, the following sections/parts serve as a good starting point:
-1. [Initialization](https://vimhelp.org/starting.txt.html#initialization);
+To better understand what files will be sourced in what order, the following sections/parts serve as a good starting point:
+1. [Initialization](https://vimhelp.org/starting.txt.html#initialization)
 2. [runtime](https://vimhelp.org/repeat.txt.html#%3Aruntime)
 3. [$VIMRUNTIME](https://vimhelp.org/starting.txt.html#%24VIMRUNTIME)
 
