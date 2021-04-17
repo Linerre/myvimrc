@@ -1,35 +1,14 @@
-" MY VIMRC -- A suckless yet working vimrc
+" Since gvimrc always gets sourced after vimrc (see h: gvimrc),
+" options only related to GUI will appear here.
 " Author: Errelin
-" Last Modified: 2021-4-11
+" Last Modified: 2021-4-17
 
 
-" Necessary plugins
-call plug#begin('~/vimfiles/plugged')
-Plug 'natebosch/vim-lsc'
-Plug 'ajh17/VimCompletesMe'
-call plug#end()
 
 " Basic options
-set number
 set guifont=courier_new:h16:b
-set nocompatible
-set nobackup
-set noundofile
-set writebackup
-set showmatch
-set number
-set ignorecase smartcase
-set noexpandtab
-set tabstop=8
-set softtabstop=4
-set shiftwidth=4
-set numberwidth=4
-set cindent shiftwidth=4
-set autoindent
-set wildmode=longest,list
-set nohlsearch
-filetype plugin indent on
-syntax enable
+set guioptions+=!a
+
 
 " System info
 if !exists("g:os")
@@ -40,8 +19,24 @@ if !exists("g:os")
     endif
 endif
 
-" Auto-completion
-set completeopt=menu,menuone,noinsert,noselect
+" LSP and auto-completion
+let g:lsc_server_commands = {
+    \ 'vim': {
+    \	'name': 'VimL',
+    \	'command': 'vim-languge-server.cmd',
+    \	'log_level': 'Error',
+    \	'enabled': 'v:false',
+    \ },
+    \ 'python': {
+    \	'name': 'python',
+    \	'command': 'pyls',
+    \	'log_level': 'Warnng',
+    \	'enabled': 'v:false',
+    \}
+\}
+let g:lsc_enable_autocomplete = v:false
+let g:lsc_auto_map = v:true
+set completeopt=menu,menuone,preview,noinsert,noselect
 
 " Mappings
 noremap ; :
