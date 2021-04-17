@@ -43,7 +43,7 @@ or if another order is prefered:
 
     set runtimpath=$VIMRUNTIME,~/vimfiles,~/mytest
 
-Vim manual explains[^2]:
+Vim manual explains<sup>[l](#myft1)</sup>:
 >You probably should always include $VIMRUNTIME somewhere, to use thedistributed runtime files.  You can put a directory before $VIMRUNTIME to find files which replace a distributed runtime files.  You can put a directory after $VIMRUNTIME to find files which add to distributed runtime files.
 
 
