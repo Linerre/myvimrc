@@ -14,8 +14,9 @@ call plug#end()
 " Basic options
 set nocompatible
 set number
-set nobackup                    " no backup file
-set noundofile
+set backupdir=~/.tmp            " backup file to .tmp
+set undodir=~/.tmp              " undo file to .tmp
+set dir=~/.tmp                  " swap file to .tmp 
 set writebackup                 " backup files when editing a file
 set showmatch                   " match paired brackets
 set ignorecase smartcase
