@@ -1,1 +1,5 @@
+# ignore vim plugins
 plugged/
+
+# ignore tmp files like *.swp
+tmp/
