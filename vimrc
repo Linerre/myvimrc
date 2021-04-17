@@ -28,7 +28,7 @@ set cindent shiftwidth=4        " indentation for C
 set autoindent
 set wildmode=longest,list
 set viminfo='20,/20,:20,<50,f1,h,s10,rA:,rB:
-
+set shortmess=filnrwxtToOS 
 set secure                      " turn on secure: no au allowed in vimrc
 filetype plugin indent on
 syntax enable
