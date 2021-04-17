@@ -14,17 +14,17 @@ call plug#end()
 " Basic options
 set nocompatible
 set number
-set nobackup
+set nobackup                    " no backup file
 set noundofile
-set writebackup
-set showmatch
+set writebackup                 " backup files when editing a file
+set showmatch                   " match paired brackets
 set ignorecase smartcase
 set expandtab
 set tabstop=8
 set softtabstop=4
 set shiftwidth=4
 set numberwidth=4
-set cindent shiftwidth=4
+set cindent shiftwidth=4        " indentation for C
 set autoindent
 set wildmode=longest,list
 set nohlsearch
