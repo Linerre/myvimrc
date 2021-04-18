@@ -5,9 +5,10 @@ A suckless, modularized, vim-manual-based vimrc that works on Windows.
 - Shell: PowerShell
 
 ## Modules
-The following files will be sourced when `vimrc` gets sourced:
-1. Module 1
-2. ....
+The following modules will be sourced when `vimrc` gets sourced:
+1. general.vim -- general options set for the editor itself and for all languages  
+2. *<plugin_name>*.vim -- each plugin's config
+3. after/\*.vim -- modifications to the system distribution (I'm happy with the default, just some minor tweaking).
 
 ## Modules structure explained
 To better understand what files will be sourced in what order, the following sections/parts serve as a good starting point:
