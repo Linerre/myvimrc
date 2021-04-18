@@ -7,7 +7,7 @@ A suckless, modularized, vim-manual-based vimrc that works on Windows.
 ## Modules
 The following modules will be sourced when `vimrc` gets sourced:
 1. general.vim -- general options set for the editor itself and for all languages  
-2. *<plugin_name>*.vim -- each plugin's config
+2. <plugin_name>.vim -- each plugin's config
 3. after/\*.vim -- modifications to the system distribution (I'm happy with the default, just some minor tweaking).
 
 ## Modules structure explained
@@ -18,23 +18,24 @@ To better understand what files will be sourced in what order, the following sec
 
 According to Vim manual:
 
+
 The following dirs (grouped here) will be sourced when vim starts:
 Group 1: vimfiles -- my preference
 
-    ~/vimfiles == C:/Users/*<username>*:g/vimfiles,
-                  ┕C:/Users/*<username>*:g/vimfiles/plugged/vim-lsc,
-                  ┕C:/Users/*<username>*:g/vimfiles/plugged/VimCompletesMe,
-                  ┕C:/Users/*<username>*:g/vimfiles/plugged/gruvbox,
+    ~/vimfiles == C:/Users/<username>/vimfiles,
+                  ┕C:/Users/<username>/vimfiles/plugged/vim-lsc,
+                  ┕C:/Users/<username>/vimfiles/plugged/VimCompletesMe,
+                  ┕C:/Users/<username>/vimfiles/plugged/gruvbox,
                
 Group 2: `$VIMRUMTIM` == where vim has been installed
 
-    C:/Users/_<username>_:g/scoop/apps/vim-nightly/current/vimfiles/
+    C:/Users/<*username*>/scoop/apps/vim-nightly/current/vimfiles/
 
 Group 2': after dirs == where `after` dirs are (part of group2)
 
-    C:/Users/*<username>*:g/scoop/apps/vim-nightly/current/vimfiles/after,
-    C:/Users/*<username>*:g/vimfiles/plugged/vim-lsc/after,
-    C:/Users/*<username>*:g/vimfiles/after
+    C:/Users/<username>/scoop/apps/vim-nightly/current/vimfiles/after,
+    C:/Users/<username>/vimfiles/plugged/vim-lsc/after,
+    C:/Users/<username>/vimfiles/after
 
 Group 3: whatever files on my machine
 
