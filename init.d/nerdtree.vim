@@ -1,5 +1,5 @@
 " Mapping for NERDTree
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 " The Following settings are copied here 
