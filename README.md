@@ -4,6 +4,13 @@ A suckless, modularized, vim-manual-based vimrc that works on Windows.
 - Terminal: ConEmu
 - Shell: PowerShell
 
+## Reason
+I'm using several machines with different OSes installed on them. Manly Linux, but Windows/macOS there too. 
+
+Windows is so different from \*nix ones that it's worth the effort to config Vim soley for it.  And since Neovim is going to be more different than Vim (see [differences](https://neovim.io/doc/user/vim_diff.html), it's better to have a Vim-only config repo.
+
+One more trivial reason is that I'm reading Vim's excellent [documenation](https://vimhelp.org). I have found a few reduandant options throughout my old config. As I learn more, I'll only a saner version based on the old one.
+
 ## Modules
 The following modules will be sourced when `vimrc` gets sourced:
 1. general.vim -- general options set for the editor itself and for all languages  
