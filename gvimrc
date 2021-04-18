@@ -8,5 +8,3 @@
 " Basic options
 set guifont=courier_new:h16:b:cDEFAULT
 set guioptions+=!a
-set background=light
-colorscheme gruvbox
