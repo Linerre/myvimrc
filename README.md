@@ -21,20 +21,20 @@ According to Vim manual:
 The following dirs (grouped here) will be sourced when vim starts:
 Group 1: vimfiles -- my preference
 
-    ~/vimfiles == C:\Users\*<username>*:g/vimfiles,
-                  ┕C:\Users\*<username>*:g\vimfiles\plugged\vim-lsc,
-                  ┕C:\Users\*<username>*:g\vimfiles\plugged\VimCompletesMe,
-                  ┕C:\Users\*<username>*:g\vimfiles\plugged\gruvbox,
+    ~/vimfiles == C:/Users/*<username>*:g/vimfiles,
+                  ┕C:/Users/*<username>*:g/vimfiles/plugged/vim-lsc,
+                  ┕C:/Users/*<username>*:g/vimfiles/plugged/VimCompletesMe,
+                  ┕C:/Users/*<username>*:g/vimfiles/plugged/gruvbox,
                
 Group 2: `$VIMRUMTIM` == where vim has been installed
 
-    C:\Users\*<username>*:g\scoop\apps\vim-nightly\current\vimfiles\
+    C:/Users/_<username>_:g/scoop/apps/vim-nightly/current/vimfiles/
 
 Group 2': after dirs == where `after` dirs are (part of group2)
 
-    C:\Users\*<username>*:g\scoop\apps\vim-nightly\current/vimfiles/after,
-    C:\Users\*<username>*:g\vimfiles\plugged\vim-lsc\after,
-    C:\Users\*<username>*:g/vimfiles/after
+    C:/Users/*<username>*:g/scoop/apps/vim-nightly/current/vimfiles/after,
+    C:/Users/*<username>*:g/vimfiles/plugged/vim-lsc/after,
+    C:/Users/*<username>*:g/vimfiles/after
 
 Group 3: whatever files on my machine
 
