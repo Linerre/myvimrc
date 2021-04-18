@@ -1,4 +1,4 @@
-" MY VIMRC -- A suckless yet working vimrc
+" MY VIMRC -- A suckless, modularized yet working vimrc
 " Author: Errelin
 " Last Modified: 2021-4-11
 
@@ -11,27 +11,6 @@ Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 call plug#end()
 
-" General options
-set number                      " absolute line number
-set backupdir=~/.tmp            " backup file to .tmp
-set undodir=~/.tmp              " undo file to .tmp
-set dir=~/.tmp                  " swap file to .tmp 
-set writebackup                 " backup files when editing a file
-set showmatch                   " match paired brackets
-set ignorecase smartcase
-set expandtab
-set tabstop=8
-set softtabstop=4
-set shiftwidth=4
-set numberwidth=4
-set cindent shiftwidth=4        " indentation for C
-set autoindent
-set wildmode=longest,list
-set viminfo='20,/20,:20,<50,f1,h,s10,rA:,rB:
-set shortmess=filnrwxtToOS 
-set secure                      " turn on secure: no au allowed in vimrc
-filetype plugin indent on
-syntax enable
 
 " LSP and auto-completion
 let g:lsc_server_commands = {
