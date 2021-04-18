@@ -29,3 +29,12 @@ colorscheme gruvbox
 filetype plugin indent on
 syntax enable
 
+
+" General mappings; plugin specific mappings in their own *.vim
+let maplocalleader=' '
+noremap ; :
+
+" Window operation/movement
+noremap <silent> <LocalLeader>q :close<CR>
+
+" Buffer operation
