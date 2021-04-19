@@ -5,15 +5,18 @@
 
 " Necessary plugins
 call plug#begin('~/vimfiles/plugged')
-Plug 'natebosch/vim-lsc'
-Plug 'ajh17/VimCompletesMe'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'lifepillar/vim-mucomplete'
+Plug 'natebosch/vim-lsc'
+"Plug 'ajh17/VimCompletesMe'
 "Plug 'morhetz/gruvbox'         " no need for these themes
-"Plug 'lifepillar/vim-gruvbox8' " since vim uses the ConEmu's theme
 call plug#end()
 
 runtime init.d\general.vim
 runtime init.d\nerdtree.vim
-runtime init.d\vim-lsc.vim
+runtime init.d\vimlsc.vim
+
+
+
 
 
