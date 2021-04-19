@@ -1,2 +1,5 @@
 # ignore vim plugins
 plugged/
+
+# ignore tmp dir
+tmp/
