@@ -24,8 +24,6 @@ set viminfo='20,/20,:20,<50,f1,h,s10,rA:,rB:
 set shortmess=filnrwxtToOS 
 set complete-=i
 set secure                      " turn on secure: no au allowed in vimrc
-set background=light 		" gruvbox light
-colorscheme gruvbox
 filetype plugin indent on
 syntax enable
 
