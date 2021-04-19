@@ -7,30 +7,13 @@
 call plug#begin('~/vimfiles/plugged')
 Plug 'natebosch/vim-lsc'
 Plug 'ajh17/VimCompletesMe'
-Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+"Plug 'morhetz/gruvbox'         " no need for these themes
+"Plug 'lifepillar/vim-gruvbox8' " since vim uses the ConEmu's theme
 call plug#end()
 
-
-" LSP and auto-completion
-let g:lsc_server_commands = {
-    \ 'vim': {
-    \	'name': 'VimL',
-    \	'command': 'vim-languge-server.cmd',
-    \	'log_level': 'Error',
-    \	'enabled': 'v:false',
-    \ },
-    \ 'python': {
-    \	'name': 'python',
-    \	'command': 'pyls',
-    \	'log_level': 'Warnng',
-    \	'enabled': 'v:false',
-    \}
-\}
-let g:lsc_enable_autocomplete = v:false
-let g:lsc_auto_map = v:true
-set completeopt=menu,menuone,preview,noinsert,noselect
+runtime init.d\general.vim
+runtime init.d\nerdtree.vim
+runtime init.d\vim-lsc.vim
 
 
-" Mappings
-noremap ; :
