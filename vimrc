@@ -5,16 +5,19 @@
 
 " Necessary plugins
 call plug#begin('~/vimfiles/plugged')
+"Plug 'natebosch/vim-lsc'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'lifepillar/vim-mucomplete'
-Plug 'natebosch/vim-lsc'
+Plug 'morhetz/gruvbox'         " no need for these themes
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'ajh17/VimCompletesMe'
-"Plug 'morhetz/gruvbox'         " no need for these themes
 call plug#end()
+
+let g:node_client_debug = 1
 
 runtime init.d\general.vim
 runtime init.d\nerdtree.vim
-runtime init.d\vimlsc.vim
+"runtime init.d\vimlsc.vim
 
 
 
