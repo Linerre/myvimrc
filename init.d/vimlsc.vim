@@ -4,7 +4,7 @@
 
 let g:lsc_server_commands = {
   \ 'python': {
-  \   'name': 'python-LSP',
+  \   'name': 'py-LSP',
   \   'command': 'pyls',
   \   },
   \ 'vim': {
