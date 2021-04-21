@@ -17,8 +17,8 @@ The following modules (under `init.d`) will be sourced when the `vimrc` gets sou
 2. <plugin_name>.vim -- each plugin's config
 3. after/\*.vim -- modifications to the system distribution (I'm happy with the default most of the time, just some minor tweaking).
 
-## Modules structure explained
-To better understand what files will be sourced in what order, the following sections/parts serve as a good starting point:
+## Module order explained
+To better understand what files will be sourced in what order, the following sections/parts in Vim doc serve as a good starting point:
 1. [Initialization](https://vimhelp.org/starting.txt.html#initialization)
 2. [runtime](https://vimhelp.org/repeat.txt.html#%3Aruntime)
 3. [$VIMRUNTIME](https://vimhelp.org/starting.txt.html#%24VIMRUNTIME)
