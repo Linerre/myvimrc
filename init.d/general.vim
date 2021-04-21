@@ -36,7 +36,7 @@ syntax enable
 
 " General mappings; plugin specific mappings in their own *.vim
 let maplocalleader=' '
-noremap ; :
+nnoremap ; :
 
 " Window operation/movement
 noremap <silent> <LocalLeader>q :close<CR>
