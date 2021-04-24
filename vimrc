@@ -4,20 +4,26 @@
 
 
 " Necessary plugins
-call plug#begin('~/vimfiles/plugged')
-"Plug 'natebosch/vim-lsc'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'lifepillar/vim-mucomplete'
-Plug 'morhetz/gruvbox'
-"Plug 'ajh17/VimCompletesMe'
-call plug#end()
+if has('win32') || has ('win64')
+    call plug#begin('~/vimfiles/plugged')
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+    Plug 'lifepillar/vim-mucomplete'
+    Plug 'morhetz/gruvbox'
+    "Plug 'ajh17/VimCompletesMe'
+    call plug#end()
+    runtime init.d\cocnvim.vim
+else
+    call plug#begin('~/.vim/plugged')
+    Plug 'natebosch/vim-lsc'
+    Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+    Plug 'lifepillar/vim-mucomplete'
+    Plug 'morhetz/gruvbox'
+    Plug 'ryanoasis/vim-devicons'
+    call plug#end()
+endif
+
 
 runtime init.d\general.vim
 runtime init.d\nerdtree.vim
-runtime init.d\cocnvim.vim
 "runtime init.d\vimlsc.vim
-
-
-
-
