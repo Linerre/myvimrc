@@ -50,7 +50,7 @@ Group 3: whatever files on my machine
 
     set runtimepath=group1,group2,group3,...
 
-Usually I don't need to configure my `runtimpath`, since either `~/vimfiles` (Windows) or `~/.vim` is already included in `$VIMRUNTIME`. If I'd like to add another directory to it, a real example could be:
+Usually I don't need to configure my `runtimpath`, as either `~/vimfiles` (Windows) or `~/.vim` is already included in `$VIMRUNTIME`. If I'd like to add another directory to it, a real example could be:
 
     set runtimepath=~/vimfiles,$VIMRUNTIME,~/mytest
 
