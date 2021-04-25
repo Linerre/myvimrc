@@ -1,6 +1,6 @@
 " MY VIMRC -- A suckless, modularized yet working vimrc
 " Author: Errelin
-" Last Modified: 2021 Apr 25 14:28
+" Last Modified: 2021 Apr 25 17:53
 
 
 " Necessary plugins
@@ -25,6 +25,5 @@ else
     runtime modules/vimlsc.vim
 endif
 
-
-runtime modules/general.vim
+runtime modules/options.vim
 runtime modules/nerdtree.vim
