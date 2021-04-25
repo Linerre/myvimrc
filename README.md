@@ -1,8 +1,16 @@
 # $MYVIMRC
-A sane, modularized, vim-manual-based *vimrc* that works on Windows.
-- VIM version: vim-nightly (via scoop)
-- Terminal: ConEmu
-- Shell: PowerShell
+A sane, modularized, vim-manual-based *vimrc* that works on btoh Windows and \*nix distros.
+
+It is an independent vim-config repo and also a submodule of my [dotfiles](ihttps://github.com/Linerre/voidrice).
+- VIM version: vim-nightly (via pkg managers)
+- Terminal: 
+    - st
+    - Alacritty
+    - kitty
+- Shell: 
+    - PowerShell
+    - Zsh
+    - Bash
 
 ## Reason
 1. Vim's config is not XDG-compatible yet so I separate it from my other dotfiles. 
@@ -15,7 +23,9 @@ One more trivial reason is that I'm reading Vim's excellent [documenation](https
 ## Modules
 The following modules (under `modules` dir) will be sourced when the `vimrc` gets sourced:
 1. general.vim -- general options set for the editor itself and for all languages  
-2. <*plugin_name*>.vim -- each plugin's config
+2. <*module_name*>.vim where *module_name* could be:
+    1. plugin's name;
+    2. module name indicating its functionality, e.g. 'theme', 'mappings', etc.
 3. after/\*.vim -- modifications to the system distribution (I'm happy with the default most of the time, just some minor tweaking).
 
 ## Module order explained
