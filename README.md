@@ -25,7 +25,7 @@ The following modules (under `modules` dir) will be sourced when the `vimrc` get
 1. general.vim -- general options set for the editor itself and for all languages  
 2. <*module_name*>.vim where *module_name* :
     1. is a plugin's name;
-    2. indicate its functionality, e.g. 'theme', 'mappings', etc.
+    2. indicates its functionality, e.g. 'theme', 'mappings', etc.
 3. after/\*.vim -- modifications to the system distribution (I'm happy with the default most of the time, just some minor tweaking).
 
 ## Module order explained
