@@ -20,7 +20,7 @@ It is an independent vim-config repo and also a submodule of my [dotfiles](ihttp
 1. Vim's config is not XDG-compatible yet so I separate it from my other dotfiles. 
 2. I'm using several machines with different OSes installed on them. Manly Linux, but Windows/macOS there too. 
 3. Windows is so different from \*nix ones that it's worth the effort to tweak Vim a little bit solely for it.  
-4. Since Neovim is going to be more different than Vim (see [differences](https://neovim.io/doc/user/vim_diff.html), it's better to have a Vim-only config repo.
+4. Since Neovim is going to be more different than Vim (see [differences](https://neovim.io/doc/user/vim_diff.html)), it's better to have a Vim-only config repo.
 
 One more trivial reason is that I'm reading Vim's excellent [documenation](https://vimhelp.org). I have found a few redundant options set throughout my old config. As I learn more, I'll only develop a saner version based on the old one.
 
