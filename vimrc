@@ -12,7 +12,7 @@ if has('win32') || has ('win64')
     Plug 'morhetz/gruvbox'
     "Plug 'ajh17/VimCompletesMe'
     call plug#end()
-    runtime init.d\cocnvim.vim
+    runtime modules\cocnvim.vim
 else
     call plug#begin('~/.vim/plugged')
     Plug 'natebosch/vim-lsc'
@@ -21,9 +21,9 @@ else
     Plug 'morhetz/gruvbox'
     Plug 'ryanoasis/vim-devicons'
     call plug#end()
+    runtime modules\vimlsc.vim
 endif
 
 
-runtime init.d\general.vim
-runtime init.d\nerdtree.vim
-"runtime init.d\vimlsc.vim
+runtime modules\general.vim
+runtime modules\nerdtree.vim
