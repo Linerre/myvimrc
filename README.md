@@ -29,9 +29,9 @@ The following modules (under `modules` dir) will be sourced when the `vimrc` get
 1. `options.vim` -- general options set for the editor itself and for all languages. NOTE: options with desired default values will not be set again
 2. <*module_name*>.vim -- where *module_name* is usually a plugin's name
 3. `theme.vim` -- colorscheme related settings
-4. `mappings.vim` -- general mappings; filetype specific mappings will be found in `ftplugin/\*vim`
-5. `autocmds.vim` -- general autocmds; filetype specific autocmds will be found in `ftplugin/\*vim`
-6. `after/\*.vim` -- modifications to the system distribution (I'm happy with the default most of the time, just some minor tweaking)
+4. `mappings.vim` -- general mappings; filetype specific mappings will be found in `ftplugin/*.vim`
+5. `autocmds.vim` -- general autocmds; filetype specific autocmds will be found in `ftplugin/*.vim`
+6. `after/*.vim` -- modifications to the system distribution (I'm happy with the default most of the time, just some minor tweaking)
 
 ## Module order explained
 To better understand what files will be sourced in what order, the following sections/parts in Vim doc serve as a good starting point:
