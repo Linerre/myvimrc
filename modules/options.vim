@@ -1,6 +1,6 @@
 " Basic options, mappings, autocmds, etc
 " Author: Errelin
-" Last Modified: 2021 Apr 24 23:10
+" Last Modified: 2021 Apr 25 18:34
 
 set encoding=utf-8              " UTF-8 
 set number                      " absolute line number
@@ -46,10 +46,16 @@ inoremap <F2> <C-R>=strftime("%c")<CR>
 " Auto-cmds:
 augroup general
     au!
-    au BufWritePre vimrc,~/.vim/modules/*.vim ks|call LastMod()|'s 
+    au BufWritePre vimrc,gvimrc,~/*vim*/modules/*.vim ks|call s:LastMod()|'s 
 augroup END
 
 " User-defined functions
-fun! LastMod()
-    exe "3s/Last Modified: .*/Last Modified: " . strftime("%Y %b %d %H:%M")
+fun! s:LastMod()
+    if line('$') > 10
+        let l:note_last_line = 10
+    else
+        let l:note_last_line = line('$')
+    endif
+    exe "1," . l:note_last_line . "s/Last Modified: .*/Last Modified: " . 
+    \ strftime("%Y %b %d %H:%M")
 endfun
