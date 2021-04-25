@@ -1,8 +1,6 @@
-" General options for all typefiles/languages.
-" Think of this as unversial rules for my Vim
-" Language specific options are set in filetype/*.vim
+" Basic options, mappings, autocmds, etc
 " Author: Errelin
-" Last Modified: 4/22/2021 7:24:55 PM
+" Last Modified: 2021 Apr 24 23:10
 
 set encoding=utf-8              " UTF-8 
 set number                      " absolute line number
@@ -28,8 +26,6 @@ set conceallevel=0              " to show the bars and stars
 hi link HelpBar Normal
 hi link HelpStar Normal
 set secure                      " turn on secure: no au allowed in vimrc
-set background=light
-colorscheme gruvbox
 filetype plugin indent on
 syntax enable
 
@@ -47,3 +43,13 @@ nnoremap <F2> d$a<C-R>=strftime("%c")<CR><Esc>
 inoremap <F2> <C-R>=strftime("%c")<CR>
 
 
+" Auto-cmds:
+augroup general
+    au!
+    au BufWritePre vimrc,~/.vim/modules/*.vim ks|call LastMod()|'s 
+augroup END
+
+" User-defined functions
+fun! LastMod()
+    exe "3s/Last Modified: .*/Last Modified: " . strftime("%Y %b %d %H:%M")
+endfun

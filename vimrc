@@ -1,6 +1,6 @@
 " MY VIMRC -- A suckless, modularized yet working vimrc
 " Author: Errelin
-" Last Modified: 2021-4-11
+" Last Modified: 2021 Apr 25 14:28
 
 
 " Necessary plugins
@@ -13,6 +13,7 @@ if has('win32') || has ('win64')
     "Plug 'ajh17/VimCompletesMe'
     call plug#end()
     runtime modules\cocnvim.vim
+    runtime modules/theme.vim
 else
     call plug#begin('~/.vim/plugged')
     Plug 'natebosch/vim-lsc'
