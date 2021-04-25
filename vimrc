@@ -21,9 +21,9 @@ else
     Plug 'morhetz/gruvbox'
     Plug 'ryanoasis/vim-devicons'
     call plug#end()
-    runtime modules\vimlsc.vim
+    runtime modules/vimlsc.vim
 endif
 
 
-runtime modules\general.vim
-runtime modules\nerdtree.vim
+runtime modules/general.vim
+runtime modules/nerdtree.vim
