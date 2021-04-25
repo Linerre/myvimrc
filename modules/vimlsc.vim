@@ -1,6 +1,7 @@
-" LSP and auto-completion config
 " No need to use after/ftplugin/*.vim
-" becasue lsc_server_commands already does that
+" as lsc already does that
+" Last Modified: Sun 25 Apr 2021 12:16:38 PM HKT
+"
 
 let g:lsc_server_commands = {
   \ 'python': {
@@ -20,8 +21,7 @@ let g:lsc_auto_map = {
  \  'FindCodeActions': 'ga',
  \  'Completion': 'omnifunc',
  \}
-"let g:lsc_auto_map = {'defaults': v:true, 'Completion': 'omnifunc'}
+
 let g:lsc_enable_autocomplete  = v:false
 let g:lsc_reference_highlights = v:true
-let g:lsc_enable_diagnostics   = v:false
 set completeopt=menu,menuone,preview,noinsert,noselect
