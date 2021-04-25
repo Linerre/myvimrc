@@ -20,7 +20,7 @@ set numberwidth=4
 set autoindent
 set backspace=indent,eol,start  " BS works as those in modern editors
 set wildmode=longest,list
-set viminfo='20,/20,:20,<30,f1,h,s10,rA:,rB:,n~/vimfiles/viminfo
+set viminfo='20,/20,:20,<30,f1,h,s10,rA:,rB:,n~/.tmp/viminfo
 set shortmess=filnrwxtToOS 
 set iskeyword=@,48-57,192-225,- " two_words; one-word 
 set complete-=i
