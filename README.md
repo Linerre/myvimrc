@@ -1,20 +1,21 @@
 # $MYVIMRC
-A suckless, modularized, vim-manual-based *vimrc* that works on Windows.
+A sane, modularized, vim-manual-based *vimrc* that works on Windows.
 - VIM version: vim-nightly (via scoop)
 - Terminal: ConEmu
 - Shell: PowerShell
 
 ## Reason
-I'm using several machines with different OSes installed on them. Manly Linux, but Windows/macOS there too. 
+1. Vim's config is not XDG-compatible yet so I separate it from my other dotfiles. 
+2. I'm using several machines with different OSes installed on them. Manly Linux, but Windows/macOS there too. 
+3. Windows is so different from \*nix ones that it's worth the effort to tweak Vim a little bit solely for it.  
+4. Since Neovim is going to be more different than Vim (see [differences](https://neovim.io/doc/user/vim_diff.html), it's better to have a Vim-only config repo.
 
-Windows is so different from \*nix ones that it's worth the effort to config Vim solely for it.  And since Neovim is going to be more different than Vim (see [differences](https://neovim.io/doc/user/vim_diff.html), it's better to have a Vim-only config repo.
-
-One more trivial reason is that I'm reading Vim's excellent [documenation](https://vimhelp.org). I have found a few redundant options set throughout my old config. As I learn more, I'll only a saner version based on the old one.
+One more trivial reason is that I'm reading Vim's excellent [documenation](https://vimhelp.org). I have found a few redundant options set throughout my old config. As I learn more, I'll only develop a saner version based on the old one.
 
 ## Modules
-The following modules (under `init.d`) will be sourced when the `vimrc` gets sourced:
+The following modules (under `modules` dir) will be sourced when the `vimrc` gets sourced:
 1. general.vim -- general options set for the editor itself and for all languages  
-2. <plugin_name>.vim -- each plugin's config
+2. <*plugin_name*>.vim -- each plugin's config
 3. after/\*.vim -- modifications to the system distribution (I'm happy with the default most of the time, just some minor tweaking).
 
 ## Module order explained
@@ -24,7 +25,6 @@ To better understand what files will be sourced in what order, the following sec
 3. [$VIMRUNTIME](https://vimhelp.org/starting.txt.html#%24VIMRUNTIME)
 
 According to Vim manual:
-
 
 The following dirs (grouped here) will be sourced when vim starts:
 Group 1: vimfiles -- my preference
@@ -50,7 +50,7 @@ Group 3: whatever files on my machine
 
     set runtimepath=group1,group2,group3,...
 
-A real example could be:
+Usually I don't need to configure my `runtimpath`, since either `~/vimfiles` (Windows) or `~/.vim` is already included in `$VIMRUNTIME`. If I'd like to add another directory to it, a real example could be:
 
     set runtimepath=~/vimfiles,$VIMRUNTIME,~/mytest
 
