@@ -2,6 +2,8 @@
 A sane, modularized, vim-manual-based *vimrc* that works on btoh Windows and \*nix distros.
 
 It is an independent vim-config repo and also a submodule of my [dotfiles](ihttps://github.com/Linerre/voidrice).
+
+## Basics
 - VIM version: vim-nightly (via pkg managers)
 - Terminal: 
     - st
@@ -11,6 +13,8 @@ It is an independent vim-config repo and also a submodule of my [dotfiles](ihttp
     - PowerShell
     - Zsh
     - Bash
+
+*These days I'm using gruvbox light theme everywhere*.
 
 ## Reason
 1. Vim's config is not XDG-compatible yet so I separate it from my other dotfiles. 
