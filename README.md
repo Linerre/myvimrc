@@ -4,11 +4,14 @@ A sane, modularized, vim-manual-based *vimrc* that works on btoh Windows and \*n
 It is an independent vim-config repo and also a submodule of my [dotfiles](https://github.com/Linerre/voidrice).
 
 ## Basics
-- VIM version: vim-nightly (via pkg managers)
+- VIM version: 
+    - vim-nightly (via scoop)
+    - vim-8.2 (via pkg managers)
 - Terminal: 
     - st
+    - Konsole
     - Alacritty
-    - kitty
+    - Terminal.app (macOS)
 - Shell: 
     - PowerShell
     - Zsh
@@ -29,8 +32,8 @@ The following modules (under `modules` dir) will be sourced when the `vimrc` get
 1. `options.vim` -- general options set for the editor itself and for all languages. NOTE: options with desired default values will not be set again
 2. <*module_name*>.vim -- where *module_name* is usually a plugin's name
 3. `theme.vim` -- colorscheme related settings
-4. `mappings.vim` -- general mappings; filetype specific mappings will be found in `ftplugin/*.vim`
-5. `autocmds.vim` -- general autocmds; filetype specific autocmds will be found in `ftplugin/*.vim`
+4. `mappings.vim` -- general mappings; filetype specific mappings will be found in `ftplugin/*.vim` (e.g. `python.vim`)
+5. `autocmds.vim` -- general autocmds; filetype specific autocmds will be found in `ftplugin/*.vim` (e.g. `c.vim`)
 6. `after/*.vim` -- modifications to the system distribution (I'm happy with the default most of the time, just some minor tweaking)
 
 ## Module order explained
