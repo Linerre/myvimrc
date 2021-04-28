@@ -1,6 +1,6 @@
 " MY VIMRC -- A suckless, modularized yet working vimrc
 " Author: Errelin
-" Last Modified: 2021 Apr 25 17:53
+" Last Modified: 2021 Apr 28 12:53
 
 
 " Necessary plugins
@@ -12,7 +12,7 @@ if has('win32') || has ('win64')
     Plug 'morhetz/gruvbox'
     "Plug 'ajh17/VimCompletesMe'
     call plug#end()
-    runtime modules\cocnvim.vim
+    runtime modules/cocnvim.vim
     runtime modules/theme.vim
 else
     call plug#begin('~/.vim/plugged')
@@ -26,4 +26,6 @@ else
 endif
 
 runtime modules/options.vim
+runtime modules/mappings.vim
+runtime modules/autocmds.vim
 runtime modules/nerdtree.vim
