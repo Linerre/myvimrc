@@ -1,6 +1,9 @@
 " No need to use after/ftplugin/*.vim
-" as lsc already does that
-" Last Modified: Sun 25 Apr 2021 12:16:38 PM HKT
+" Becasue lsc already does that
+" Usually LSP client/server doesn't offer completion out of the box
+" LSC happens to however. An wrapper may be needed to improve the UX though,
+" like vim-mucomplete
+" Last Modified: 2021 Apr 28 20:34
 "
 
 let g:lsc_server_commands = {
