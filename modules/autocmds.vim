@@ -1,5 +1,6 @@
-
-" Auto-cmds:
+" Auto-cmds for general purposes
+" Filetype specific autocmds stored in ftplugin files
+" Last Modified: 2021 Apr 28 13:16
 augroup general
     au!
     au BufWritePre vimrc,gvimrc,~/*vim*/modules/*.vim ks|call s:LastMod()|'s 
