@@ -1,6 +1,6 @@
 " MY VIMRC -- A suckless, modularized yet working vimrc
 " Author: Errelin
-" Last Modified: 2021 Apr 28 12:53
+" Last Modified: 2021 Apr 30 15:16
 
 
 " Necessary plugins

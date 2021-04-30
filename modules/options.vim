@@ -18,6 +18,8 @@ set tabstop=8
 set softtabstop=4
 set shiftwidth=4
 set numberwidth=4
+
+set wildignore=*.o,*.obj,*.dcox,*.xlsx
 set backspace=indent,eol,start  " BS works as those in modern editors
 set wildmode=longest,list
 set viminfo='20,/20,:20,<30,f1,h,s10,rA:,rB:,n~/.tmp/viminfo
