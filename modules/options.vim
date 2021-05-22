@@ -1,6 +1,6 @@
 " Basic options that have different values than the defaults
 " Author: Errelin
-" Last Modified: 2021 May 10 22:39
+" Last Modified: 2021 May 22 20:15
 
 set number                      " absolute line number
 set writebackup                 " backup files when editing a file
@@ -11,9 +11,9 @@ set expandtab
 set secure                      " turn on secure: no au allowed in vimrc
 
 set encoding=utf-8              " UTF-8 
-set backupdir=~/.vim/.tmp            " backup file to .tmp
-set undodir=~/.vim/.tmp              " undo file to .tmp
-set dir=~/.vim/.tmp                  " swap file to .tmp 
+set backupdir=~/vimfiles/tmp    " backup file to .tmp
+set undodir=~/vimfiles/tmp      " undo file to .tmp
+set dir=~/vimfiles/tmp          " swap file to .tmp 
 set tabstop=8
 set softtabstop=4
 set shiftwidth=4
