@@ -1,6 +1,6 @@
 " MY VIMRC -- A suckless, modularized yet working vimrc
 " Author: Errelin
-" Last Modified: 2021 Apr 30 15:16
+" Last Modified: 2021 Jun 14 13:56
 
 
 " Necessary plugins
@@ -12,6 +12,9 @@ if has('win32') || has ('win64')
     Plug 'morhetz/gruvbox'
     "Plug 'ajh17/VimCompletesMe'
     call plug#end()
+    set backupdir=~/vimfiles/tmp    " backup file to .tmp
+    set undodir=~/vimfiles/tmp      " undo file to .tmp
+    set dir=~/vimfiles/tmp          " swap file to .tmp 
     runtime modules/cocnvim.vim
     runtime modules/theme.vim
 else
@@ -22,6 +25,9 @@ else
     Plug 'morhetz/gruvbox'
     Plug 'ryanoasis/vim-devicons'
     call plug#end()
+    set backupdir=~/.vim/.tmp       " backup file to .tmp
+    set undodir=~/.vim/.tmp         " undo file to .tmp
+    set dir=~/.vim/.tmp             " swap file to .tmp 
     runtime modules/vimlsc.vim
 endif
 
