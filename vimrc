@@ -1,6 +1,6 @@
 " MY VIMRC -- A suckless, modularized yet working vimrc
 " Author: Errelin
-" Last Modified: 2021 Jun 14 13:56
+" Last Modified: 2021 Jun 14 14:12
 
 
 " Necessary plugins
@@ -22,6 +22,7 @@ else
     Plug 'natebosch/vim-lsc'
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
     Plug 'lifepillar/vim-mucomplete'
+    Plug 'Glench/Vim-Jinja2-Syntax'
     Plug 'morhetz/gruvbox'
     Plug 'ryanoasis/vim-devicons'
     call plug#end()
