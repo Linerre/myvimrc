@@ -6,3 +6,6 @@ plugged/
 
 # ignore viminfo
 viminfo
+
+# ignore coc modules
+coc/
