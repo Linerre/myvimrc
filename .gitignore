@@ -3,6 +3,7 @@ plugged/
 
 # ignore tmp dir
 .tmp/
+tmp/
 
 # ignore viminfo
 viminfo
