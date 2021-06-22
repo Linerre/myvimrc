@@ -1,6 +1,6 @@
 " Basic options that have different values than the defaults
 " Author: Errelin
-" Last Modified: 2021 Jun 14 13:56
+" Last Modified: 2021 Jun 22 23:06
 
 set number                      " absolute line number
 set writebackup                 " backup files when editing a file
@@ -24,6 +24,7 @@ set shortmess=filnrwxtToOS
 set iskeyword=@,48-57,192-225,- " two_words; one-word 
 set complete-=i
 set conceallevel=0              " to show the bars and stars
+set background=light
 
 filetype plugin indent on
 syntax enable
