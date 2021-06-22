@@ -1,6 +1,6 @@
 " MY VIMRC -- A suckless, modularized yet working vimrc
 " Author: Errelin
-" Last Modified: 2021 Jun 14 14:12
+" Last Modified: 2021 Jun 22 23:05
 
 
 " Necessary plugins
@@ -16,7 +16,7 @@ if has('win32') || has ('win64')
     set undodir=~/vimfiles/tmp      " undo file to .tmp
     set dir=~/vimfiles/tmp          " swap file to .tmp 
     runtime modules/cocnvim.vim
-    runtime modules/theme.vim
+    "runtime modules/theme.vim
 else
     call plug#begin('~/.vim/plugged')
     Plug 'natebosch/vim-lsc'
