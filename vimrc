@@ -1,6 +1,6 @@
 " MY VIMRC -- A suckless, modularized yet working vimrc
 " Author: Errelin
-" Last Modified: 2021 Jun 22 23:05
+" Last Modified: 2021 Sep 26 21:26
 
 
 " Necessary plugins
@@ -22,9 +22,9 @@ else
     Plug 'natebosch/vim-lsc'
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
     Plug 'lifepillar/vim-mucomplete'
-    Plug 'Glench/Vim-Jinja2-Syntax'
     Plug 'morhetz/gruvbox'
     Plug 'ryanoasis/vim-devicons'
+    "Plug 'Glench/Vim-Jinja2-Syntax'
     call plug#end()
     set backupdir=~/.vim/.tmp       " backup file to .tmp
     set undodir=~/.vim/.tmp         " undo file to .tmp
