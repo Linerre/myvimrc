@@ -10,3 +10,6 @@ viminfo
 
 # ignore coc modules
 coc/
+
+# ignore nerdtree file
+.netrwhist
