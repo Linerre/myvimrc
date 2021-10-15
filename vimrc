@@ -1,6 +1,6 @@
 " MY VIMRC -- A suckless, modularized yet working vimrc
 " Author: Errelin
-" Last Modified: 2021 Sep 26 21:26
+" Last Modified: 2021 Oct 15 10:45
 
 
 " Necessary plugins
@@ -29,7 +29,9 @@ else
     set backupdir=~/.vim/.tmp       " backup file to .tmp
     set undodir=~/.vim/.tmp         " undo file to .tmp
     set dir=~/.vim/.tmp             " swap file to .tmp 
-    runtime modules/vimlsc.vim
+    if finddir('~/.local/lib64/node_modules/vim-language-server')
+        runtime modules/vimlsc.vim
+    endif
 endif
 
 runtime modules/options.vim
