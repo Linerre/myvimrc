@@ -1,10 +1,6 @@
 # ignore vim plugins
 plugged/
 
-# ignore tmp dir
-.tmp/
-tmp/
-
 # ignore viminfo
 viminfo
 
