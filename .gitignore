@@ -4,6 +4,9 @@ plugged/
 # ignore viminfo
 viminfo
 
+# ignore vim.swp
+*.swp
+
 # ignore coc modules
 coc/
 
