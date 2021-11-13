@@ -1,6 +1,6 @@
 " MY VIMRC -- A suckless, modularized yet working vimrc
 " Author: Errelin
-" Last Modified: 2021 Nov 13 12:47
+" Last Modified: 2021 Nov 14 00:53
 
 
 " Necessary plugins
@@ -19,11 +19,8 @@ if has('win32') || has ('win64')
     "runtime modules/theme.vim
 else
     call plug#begin('~/.vim/plugged')
-    Plug 'natebosch/vim-lsc'
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
     Plug 'lifepillar/vim-mucomplete'
-    Plug 'ryanoasis/vim-devicons'
-    "Plug 'Glench/Vim-Jinja2-Syntax'
     call plug#end()
     set backupdir=~/.vim/.tmp       " backup file to .tmp
     set undodir=~/.vim/.tmp         " undo file to .tmp
