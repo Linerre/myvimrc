@@ -1,7 +1,7 @@
 " Since gvimrc always gets sourced after vimrc (see h: gvimrc),
 " options only related to GUI will appear here.
 " Author: Errelin
-" Last Modified: 2021 May 02 19:24
+" Last Modified: 2021 Dec 11 15:15
 
 
 
@@ -15,7 +15,3 @@ elseif has('osx')
 endif
 
 set guioptions+=!a
-if has('multi_byte_ime')
-    highlight Cursor guifg=#689d6a guibg=background
-    highlight CursorIM guifg=Red guibg=background
-endif  
